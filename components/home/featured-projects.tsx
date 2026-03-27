@@ -1,35 +1,11 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { ProjectCard } from '@/components/project-card'
-import { getFeaturedProjects } from '@/lib/data/projects'
 import { ArrowRight } from 'lucide-react'
 
 export function FeaturedProjects() {
-  const sectionRef = useRef<HTMLElement>(null)
-  const projects = getFeaturedProjects().slice(0, 4)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in')
-          }
-        })
-      },
-      { threshold: 0.1 }
-    )
-
-    const cards = sectionRef.current?.querySelectorAll('.project-card')
-    cards?.forEach((card) => observer.observe(card))
-
-    return () => observer.disconnect()
-  }, [])
-
   return (
-    <section ref={sectionRef} className="py-24 md:py-32">
+    <section className="py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
@@ -51,30 +27,20 @@ export function FeaturedProjects() {
           </Link>
         </div>
 
-        {/* Projects grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={project.slug}
-              className="project-card opacity-0 translate-y-8 transition-all duration-700 ease-out"
-              style={{ transitionDelay: `${index * 100}ms` }}
-            >
-              <ProjectCard
-                project={project}
-                index={index}
-                variant={index === 0 || index === 3 ? 'large' : 'default'}
-              />
-            </div>
-          ))}
+        {/* Coming soon */}
+        <div className="flex flex-col items-center justify-center py-16 text-center">
+          <div className="w-16 h-px gradient-bg mb-12 mx-auto" />
+          <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4">
+            Bientôt disponible
+          </p>
+          <h3 className="font-serif text-3xl md:text-5xl font-medium tracking-tight mb-6">
+            Les projets arrivent
+          </h3>
+          <p className="text-muted-foreground max-w-md leading-relaxed">
+            Nous préparons notre portfolio avec soin. Revenez très bientôt pour découvrir nos réalisations.
+          </p>
         </div>
       </div>
-
-      <style jsx>{`
-        .animate-in {
-          opacity: 1 !important;
-          transform: translateY(0) !important;
-        }
-      `}</style>
     </section>
   )
 }
