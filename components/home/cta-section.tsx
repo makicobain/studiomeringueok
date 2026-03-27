@@ -8,7 +8,7 @@ export function CTASection() {
     <section className="py-24 md:py-32 relative overflow-hidden">
       {/* Gradient background */}
       <div className="absolute inset-0 gradient-bg opacity-5" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
       
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
