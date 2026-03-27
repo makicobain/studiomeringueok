@@ -156,8 +156,8 @@ export function ContactForm() {
           type="submit"
           disabled={isSubmitting}
           className={cn(
-            'inline-flex items-center gap-2 px-8 py-4 gradient-bg text-background font-medium rounded-full transition-all duration-300',
-            isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:opacity-90'
+            'btn-primary inline-flex items-center gap-2 px-8 py-4 font-medium rounded-full transition-all duration-300',
+            isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
           )}
         >
           {isSubmitting ? (

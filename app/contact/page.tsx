@@ -4,7 +4,7 @@ import { Footer } from '@/components/footer'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { ThemeProvider } from '@/components/theme-provider'
 import { ContactForm } from '@/components/contact/contact-form'
-import { Mail, MapPin } from 'lucide-react'
+import { Mail } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Contact — Studio Meringué',
@@ -13,9 +13,7 @@ export const metadata: Metadata = {
 
 const socialLinks = [
   { href: 'https://instagram.com/studio.meringue', label: 'Instagram' },
-  { href: 'linkedin.com/company/studio-meringué', label: 'LinkedIn' },
-
-
+  { href: 'https://linkedin.com/company/studio-meringue', label: 'LinkedIn' },
 ]
 
 export default function ContactPage() {
@@ -38,7 +36,7 @@ export default function ContactPage() {
               Parlons de votre <span className="gradient-text">projet</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-              Une idée, un projet, une question ? N&apos;hésitez pas à nous contacter. 
+              Une idée, un projet, une question ? N&apos;hésitez pas à nous contacter.
               Nous vous répondrons dans les plus brefs délais.
             </p>
           </div>
@@ -63,9 +61,6 @@ export default function ContactPage() {
                   </a>
                 </div>
 
-               
-
-
                 <div>
                   <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-4">
                     Suivez-nous
@@ -73,13 +68,13 @@ export default function ContactPage() {
                   <div className="flex flex-col gap-3">
                     {socialLinks.map((link) => (
                       <a
-                        key={link.name}
+                        key={link.label}
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-lg text-muted-foreground hover:text-foreground transition-colors"
                       >
-                        {link.name}
+                        {link.label}
                       </a>
                     ))}
                   </div>
@@ -87,7 +82,7 @@ export default function ContactPage() {
 
                 <div className="pt-6 border-t border-border">
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Nous répondons généralement sous 48h ouvrées. Pour les demandes urgentes, 
+                    Nous répondons généralement sous 48h ouvrées. Pour les demandes urgentes,
                     privilégiez l&apos;email direct.
                   </p>
                 </div>
