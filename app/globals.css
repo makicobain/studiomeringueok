@@ -17,7 +17,7 @@
   --secondary-foreground: oklch(0.15 0 0);
   --muted: oklch(0.92 0.005 90);
   --muted-foreground: oklch(0.45 0 0);
-  --accent: var(--gradient-3);
+  --accent: var(--gradient-2);
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.55 0.2 25);
   --destructive-foreground: oklch(1 0 0);
@@ -26,12 +26,11 @@
   --ring: #7B00F7;
   --radius: 0.5rem;
 
-  /* Brand gradient (5 stops) */
-  --gradient-1: #341309;
-  --gradient-2: #7B00F7;
-  --gradient-3: #F90C7B;
-  --gradient-4: #FF4143;
-  --gradient-5: #FC7903;
+  /* Brand gradient (4 stops) */
+  --gradient-1: #7B00F7;
+  --gradient-2: #F90C7B;
+  --gradient-3: #FF4143;
+  --gradient-4: #FC7903;
 
   /* Sidebar */
   --sidebar: oklch(0.97 0.005 90);
@@ -58,7 +57,7 @@
   --secondary-foreground: oklch(0.97 0.005 90);
   --muted: oklch(0.25 0 0);
   --muted-foreground: oklch(0.65 0 0);
-  --accent: var(--gradient-3);
+  --accent: var(--gradient-2);
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.55 0.2 25);
   --destructive-foreground: oklch(1 0 0);
@@ -66,12 +65,11 @@
   --input: oklch(0.25 0 0);
   --ring: #7B00F7;
 
-  /* Brand gradient (5 stops) */
-  --gradient-1: #341309;
-  --gradient-2: #7B00F7;
-  --gradient-3: #F90C7B;
-  --gradient-4: #FF4143;
-  --gradient-5: #FC7903;
+  /* Brand gradient (4 stops) */
+  --gradient-1: #7B00F7;
+  --gradient-2: #F90C7B;
+  --gradient-3: #FF4143;
+  --gradient-4: #FC7903;
 
   /* Sidebar */
   --sidebar: oklch(0.18 0 0);
@@ -108,8 +106,8 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-gradient-start: var(--gradient-1);
-  --color-gradient-mid: var(--gradient-3);
-  --color-gradient-end: var(--gradient-5);
+  --color-gradient-mid: var(--gradient-2);
+  --color-gradient-end: var(--gradient-4);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -140,8 +138,7 @@
     var(--gradient-1),
     var(--gradient-2),
     var(--gradient-3),
-    var(--gradient-4),
-    var(--gradient-5)
+    var(--gradient-4)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -154,8 +151,7 @@
     var(--gradient-1),
     var(--gradient-2),
     var(--gradient-3),
-    var(--gradient-4),
-    var(--gradient-5)
+    var(--gradient-4)
   );
 }
 
@@ -174,8 +170,7 @@
     var(--gradient-1),
     var(--gradient-2),
     var(--gradient-3),
-    var(--gradient-4),
-    var(--gradient-5)
+    var(--gradient-4)
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
