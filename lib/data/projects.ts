@@ -92,6 +92,31 @@ export const projects: Project[] = [
     services: ['Direction artistique', 'Conception graphique', 'Réseaux sociaux'],
     featured: true,
   },
+  {
+    slug: 'diabolo-records',
+    title: 'Diabolo Records',
+    client: 'Diabolo Records',
+    category: 'identite-visuelle',
+    categoryLabel: 'Identité Visuelle',
+    year: '2022',
+    excerpt: 'Identité visuelle complète pour une boutique de vinyles et concept-bar autour de la musique.',
+    description: 'Diabolo Records est une boutique de vinyles doublée d\'un concept-bar, un lieu de vie autour de la musique qui ouvre ses portes en décembre 2023. Le projet couvre l\'intégralité de l\'identité : logo, icônes, communication d\'ouverture, menu bar, réseaux sociaux et produits dérivés.',
+    challenge: 'Créer une identité forte ancrée dans l\'univers du vinyle et du rock, suffisamment flexible pour habiller aussi bien les supports print que digitaux, les affiches événementielles et les goodies.',
+    solution: 'Un logotype construit autour d\'une tête de lecture stylisée intégrée dans le "o" de Diabolo, avec une palette rouge-noir-blanc à l\'esprit rock. Le symbole de la platine traverse tous les supports comme un fil conducteur graphique, décliné en demi-ton sur les affiches d\'ouverture.',
+    result: 'Identité déployée sur l\'ensemble des supports pour l\'ouverture du 18 décembre 2023 : affiches, menu, réseaux sociaux, stickers et produits dérivés.',
+    coverImage: '/images/projects/diabolo-records/cover.jpg',
+    images: [
+      '/images/projects/diabolo-records/01.jpg',
+      '/images/projects/diabolo-records/02.jpg',
+      '/images/projects/diabolo-records/03.jpg',
+      '/images/projects/diabolo-records/04.jpg',
+      '/images/projects/diabolo-records/05.jpg',
+      '/images/projects/diabolo-records/06.jpg',
+      '/images/projects/diabolo-records/07.jpg',
+    ],
+    services: ['Logo', 'Charte graphique', 'Affiches', 'Menu', 'Réseaux sociaux', 'Produits dérivés'],
+    featured: true,
+  },
 ]
 
 // ─────────────────────────────────────────────────────────────
