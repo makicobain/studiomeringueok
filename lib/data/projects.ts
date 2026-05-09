@@ -12,6 +12,7 @@ export type ProjectCategory =
   | 'motion'
   | 'packaging'
   | 'digital'
+  | 'reseaux-sociaux'
 
 export interface Project {
   // ── Obligatoire ──────────────────────────────────────────
@@ -73,8 +74,8 @@ export const projects: Project[] = [
     slug: 'mystic-temple',
     title: 'Mystic Temple',
     client: 'Synaps',
-    category: 'affiche',
-    categoryLabel: 'Affiches',
+    category: 'reseaux-sociaux',
+    categoryLabel: 'Réseaux Sociaux',
     year: '2024',
     excerpt: 'Identité visuelle et supports réseaux sociaux pour une soirée électro psychédélique à Bordeaux.',
     description: 'Synaps, collectif bordelais, organisait une soirée à L\'Entrepôt avec comme seule direction créative : le nom "Mystic Temple" et une esthétique psychédélique. Carte blanche totale.',
@@ -102,6 +103,7 @@ export const categories = [
   { slug: 'identite-visuelle', label: 'Identité Visuelle' },
   { slug: 'ux-ui', label: 'UX/UI Design' },
   { slug: 'affiche', label: 'Affiches' },
+  { slug: 'reseaux-sociaux', label: 'Réseaux Sociaux' },
   { slug: 'editorial', label: 'Éditorial' },
   { slug: 'motion', label: 'Motion' },
   { slug: 'packaging', label: 'Packaging' },
