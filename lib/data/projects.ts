@@ -82,7 +82,7 @@ export const projects: Project[] = [
     challenge: 'Créer un univers visuel fort et cohérent sur plusieurs formats (bannière Facebook, posts et story Instagram) à partir d\'un nom seul, sans brief visuel ni charte existante.',
     solution: 'Parti pris sur un fond marbled liquide rose-violet, une illustration de temple générée en 3D, et une typographie extra-bold condensée blanche pour un contraste maximal. Déclinaison systématique sur tous les formats avec une cohérence immédiate.',
     result: 'Ensemble de visuels déployés sur les réseaux de Synaps et L\'Entrepôt pour la soirée du 16 février 2024.',
-    coverImage: '/images/projects/mystic-temple/cover.jpg',
+    coverImage: '/images/projects/mystic-temple/01.jpg',
     images: [
       '/images/projects/mystic-temple/01.jpg',
       '/images/projects/mystic-temple/02.jpg',
