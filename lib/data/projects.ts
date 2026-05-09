@@ -69,7 +69,28 @@ export interface Project {
 // ─────────────────────────────────────────────────────────────
 
 export const projects: Project[] = [
-  // Ajouter tes projets ici ↓
+  {
+    slug: 'mystic-temple',
+    title: 'Mystic Temple',
+    client: 'Synaps',
+    category: 'affiche',
+    categoryLabel: 'Affiches',
+    year: '2024',
+    excerpt: 'Identité visuelle et supports réseaux sociaux pour une soirée électro psychédélique à Bordeaux.',
+    description: 'Synaps, collectif bordelais, organisait une soirée à L\'Entrepôt avec comme seule direction créative : le nom "Mystic Temple" et une esthétique psychédélique. Carte blanche totale.',
+    challenge: 'Créer un univers visuel fort et cohérent sur plusieurs formats (bannière Facebook, posts et story Instagram) à partir d\'un nom seul, sans brief visuel ni charte existante.',
+    solution: 'Parti pris sur un fond marbled liquide rose-violet, une illustration de temple générée en 3D, et une typographie extra-bold condensée blanche pour un contraste maximal. Déclinaison systématique sur tous les formats avec une cohérence immédiate.',
+    result: 'Ensemble de visuels déployés sur les réseaux de Synaps et L\'Entrepôt pour la soirée du 16 février 2024.',
+    coverImage: '/images/projects/mystic-temple/cover.jpg',
+    images: [
+      '/images/projects/mystic-temple/01.jpg',
+      '/images/projects/mystic-temple/02.jpg',
+      '/images/projects/mystic-temple/03.jpg',
+      '/images/projects/mystic-temple/04.jpg',
+    ],
+    services: ['Direction artistique', 'Conception graphique', 'Réseaux sociaux'],
+    featured: true,
+  },
 ]
 
 // ─────────────────────────────────────────────────────────────
