@@ -104,7 +104,7 @@ export const projects: Project[] = [
     challenge: 'Créer une identité forte ancrée dans l\'univers du vinyle et du rock, suffisamment flexible pour habiller aussi bien les supports print que digitaux, les affiches événementielles et les goodies.',
     solution: 'Un logotype construit autour d\'une tête de lecture stylisée intégrée dans le "o" de Diabolo, avec une palette rouge-noir-blanc à l\'esprit rock. Le symbole de la platine traverse tous les supports comme un fil conducteur graphique, décliné en demi-ton sur les affiches d\'ouverture.',
     result: 'Identité déployée sur l\'ensemble des supports pour l\'ouverture du 18 décembre 2023 : affiches, menu, réseaux sociaux, stickers et produits dérivés.',
-    coverImage: '/images/projects/diabolo-records/cover.jpg',
+    coverImage: '/images/projects/diabolo-records/07.jpg',
     images: [
       '/images/projects/diabolo-records/01.jpg',
       '/images/projects/diabolo-records/02.jpg',
