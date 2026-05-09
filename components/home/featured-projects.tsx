@@ -2,8 +2,12 @@
 
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+import { getFeaturedProjects } from '@/lib/data/projects'
+import { ProjectCard } from '@/components/project-card'
 
 export function FeaturedProjects() {
+  const featuredProjects = getFeaturedProjects()
+
   return (
     <section className="py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -18,28 +22,44 @@ export function FeaturedProjects() {
               <span className="gradient-text">sélectionnés</span>
             </h2>
           </div>
-          <Link
-            href="/projets"
-            className="group inline-flex items-center gap-2 text-foreground font-medium hover:opacity-70 transition-opacity"
-          >
-            Voir tous les projets
-            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </Link>
+          {featuredProjects.length > 0 && (
+            <Link
+              href="/projets"
+              className="group inline-flex items-center gap-2 text-foreground font-medium hover:opacity-70 transition-opacity"
+            >
+              Voir tous les projets
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          )}
         </div>
 
-        {/* Coming soon */}
-        <div className="flex flex-col items-center justify-center py-16 text-center">
-          <div className="w-16 h-px gradient-bg mb-12 mx-auto" />
-          <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4">
-            Bientôt disponible
-          </p>
-          <h3 className="font-serif text-3xl md:text-5xl font-medium tracking-tight mb-6">
-            Les projets arrivent
-          </h3>
-          <p className="text-muted-foreground max-w-md leading-relaxed">
-            Nous préparons notre portfolio avec soin. Revenez très bientôt pour découvrir nos réalisations.
-          </p>
-        </div>
+        {featuredProjects.length > 0 ? (
+          /* Grille des projets mis en avant */
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {featuredProjects.map((project, index) => (
+              <ProjectCard
+                key={project.slug}
+                project={project}
+                index={index}
+                variant={index === 0 ? 'large' : 'default'}
+              />
+            ))}
+          </div>
+        ) : (
+          /* État vide */
+          <div className="flex flex-col items-center justify-center py-16 text-center">
+            <div className="w-16 h-px gradient-bg mb-12 mx-auto" />
+            <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4">
+              Bientôt disponible
+            </p>
+            <h3 className="font-serif text-3xl md:text-5xl font-medium tracking-tight mb-6">
+              Les projets arrivent
+            </h3>
+            <p className="text-muted-foreground max-w-md leading-relaxed">
+              Nous préparons notre portfolio avec soin. Revenez très bientôt pour découvrir nos réalisations.
+            </p>
+          </div>
+        )}
       </div>
     </section>
   )

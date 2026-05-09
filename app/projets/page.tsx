@@ -3,6 +3,7 @@ import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { ThemeProvider } from '@/components/theme-provider'
+import { PortfolioGrid } from '@/components/portfolio/portfolio-grid'
 
 export const metadata: Metadata = {
   title: 'Projets — Studio Meringué',
@@ -35,19 +36,8 @@ export default function ProjectsPage() {
           </div>
         </section>
 
-        {/* Coming soon */}
-        <section className="py-24 flex flex-col items-center justify-center text-center px-6">
-          <div className="w-16 h-px gradient-bg mb-12 mx-auto" />
-          <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4">
-            Bientôt disponible
-          </p>
-          <h2 className="font-serif text-3xl md:text-5xl font-medium tracking-tight mb-6">
-            Les projets arrivent
-          </h2>
-          <p className="text-muted-foreground max-w-md leading-relaxed">
-            Nous préparons notre portfolio avec soin. Revenez très bientôt pour découvrir nos réalisations.
-          </p>
-        </section>
+        {/* Portfolio grid avec filtres */}
+        <PortfolioGrid />
       </main>
       <Footer />
       <ThemeToggle />
