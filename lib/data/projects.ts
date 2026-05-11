@@ -157,6 +157,31 @@ export const projects: Project[] = [
     services: ['UX Design', 'UI Design', 'Identité visuelle', 'Prototypage'],
     featured: true,
   },
+  {
+    slug: 'weamon',
+    title: 'Weamon',
+    client: 'Projet scolaire — commanditaire réelle',
+    category: 'ux-ui',
+    categoryLabel: 'UX/UI Design',
+    year: '2026',
+    excerpt: 'Application web de gestion de patrimoine centralisant clients, agenda et documents pour un gestionnaire indépendant.',
+    description: 'Weamon est une application web conçue pour une gestionnaire de patrimoine ayant besoin d\'un outil unique pour centraliser son activité au quotidien : suivi des clients, rendez-vous, documents et investissements. Projet scolaire mené avec une vraie commanditaire.',
+    challenge: 'La gestionnaire utilisait plusieurs outils disparates pour suivre ses clients et son agenda, sans vue d\'ensemble cohérente. Elle avait besoin d\'un dashboard unique, rapide à prendre en main, qui regroupe toutes ses informations professionnelles en un seul endroit.',
+    solution: 'Une interface desktop claire et sobre, à dominante verte, avec une navigation latérale fixe en 4 sections : tableau de bord, calendrier, gestion des clients en vue Kanban par statut, et espace documents. Le tableau de bord synthétise les indicateurs clés (clients suivis, investissements sur 6 mois, prochains rendez-vous) en un coup d\'œil.',
+    result: 'Prototype complet couvrant 7 écrans : connexion, création de compte, tableau de bord, gestion des clients avec fiche détaillée, calendrier mensuel, notifications et gestion des documents.',
+    coverImage: '/images/projects/weamon/cover.jpg',
+    images: [
+      '/images/projects/weamon/01.jpg',
+      '/images/projects/weamon/02.jpg',
+      '/images/projects/weamon/03.jpg',
+      '/images/projects/weamon/04.jpg',
+      '/images/projects/weamon/05.jpg',
+      '/images/projects/weamon/06.jpg',
+      '/images/projects/weamon/07.jpg',
+    ],
+    services: ['UX Design', 'UI Design', 'Prototypage', 'Design System'],
+    featured: true,
+  },
 ]
 
 // ─────────────────────────────────────────────────────────────
