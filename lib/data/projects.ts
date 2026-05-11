@@ -205,6 +205,32 @@ export const projects: Project[] = [
     services: ['Logo', 'Charte graphique', 'Icônes', 'Typographie', 'Mise en situation'],
     featured: true,
   },
+  {
+    slug: 'kymo-posters',
+    title: 'KyMo — Série de posters',
+    client: 'KyMo',
+    category: 'affiche',
+    categoryLabel: 'Affiches',
+    year: '2023 — 2026',
+    excerpt: 'Série de posters psychédéliques réalisés en collaboration avec le groupe de rock indépendant KyMo.',
+    description: 'Collaboration continue avec KyMo, groupe de rock indépendant, pour la création d'une série de posters inspirés de leurs titres. Chaque affiche est réalisée entièrement sur Photoshop et constitue une interprétation visuelle d'une chanson.',
+    challenge: 'Retranscrire l'univers émotionnel et sonore d'un groupe de rock indépendant en une série de visuels cohérents, sans tomber dans les codes graphiques trop attendus du genre.',
+    solution: 'Un langage visuel centré sur l'espace, les textures granuleuses et les couleurs vibrantes — fonds liquides marbled, gradients chromatiques intenses, silhouettes humaines minuscules face à l'immensité. Chaque poster est construit autour d'une phrase ou d'un mot du titre qu'il illustre.',
+    result: 'Une série de 8 affiches couvrant plusieurs années de collaboration, formant un univers visuel reconnaissable et cohérent pour le groupe.',
+    coverImage: '/images/projects/kymo-posters/cover.jpg',
+    images: [
+      '/images/projects/kymo-posters/01.jpg',
+      '/images/projects/kymo-posters/02.jpg',
+      '/images/projects/kymo-posters/03.jpg',
+      '/images/projects/kymo-posters/04.jpg',
+      '/images/projects/kymo-posters/05.jpg',
+      '/images/projects/kymo-posters/06.jpg',
+      '/images/projects/kymo-posters/07.jpg',
+      '/images/projects/kymo-posters/08.jpg',
+    ],
+    services: ['Direction artistique', 'Illustration', 'Photomontage'],
+    featured: true,
+  },
 ]
 
 // ─────────────────────────────────────────────────────────────
