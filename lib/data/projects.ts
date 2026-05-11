@@ -182,6 +182,29 @@ export const projects: Project[] = [
     services: ['UX Design', 'UI Design', 'Prototypage', 'Design System'],
     featured: true,
   },
+  {
+    slug: 'zenzer',
+    title: 'Zenzer',
+    client: 'Zenzer',
+    category: 'identite-visuelle',
+    categoryLabel: 'Identité Visuelle',
+    year: '2024',
+    excerpt: 'Identité visuelle complète pour une application mettant en relation restaurateurs et gourmets.',
+    description: 'Zenzer est une application à double entrée : elle aide les restaurateurs à créer et mettre en avant leurs menus via des templates, et permet aux clients de trouver un restaurant adapté à leurs préférences alimentaires. Studio Meringué a conçu l\'intégralité de l\'identité visuelle, de la charte graphique aux mises en situation.',
+    challenge: 'Créer une identité qui parle simultanément aux restaurateurs (crédibilité, modernité) et aux clients (appétit, facilité). Le logo devait être distinctif, mémorable, et fonctionner aussi bien en icône d\'application qu\'en logotype.',
+    solution: 'Un logotype inspiré de la fleur de gingembre, dont un pétale se transforme en fourchette — symbole à la fois botanique et gastronomique. La typographie Neulis Cursive, légèrement retravaillée, apporte une touche organique et chaleureuse. Le gradient jaune-corail-rose reflète la générosité et la chaleur de la cuisine. La charte couvre logo, icônes, pictogrammes, couleurs, typographies et mises en situation.',
+    result: 'Charte graphique complète livrée au client : logo en plusieurs variantes (couleur, noir et blanc, icônes app), système de couleurs et gradients, typographies, pictogrammes, et mises en situation réseaux sociaux et mobile.',
+    coverImage: '/images/projects/zenzer/cover.jpg',
+    images: [
+      '/images/projects/zenzer/01.jpg',
+      '/images/projects/zenzer/02.jpg',
+      '/images/projects/zenzer/03.jpg',
+      '/images/projects/zenzer/04.jpg',
+      '/images/projects/zenzer/05.jpg',
+    ],
+    services: ['Logo', 'Charte graphique', 'Icônes', 'Typographie', 'Mise en situation'],
+    featured: true,
+  },
 ]
 
 // ─────────────────────────────────────────────────────────────
