@@ -143,7 +143,7 @@ export const projects: Project[] = [
     excerpt: 'Refonte et identité visuelle d\'un site communautaire dédié aux passionnés de loisirs créatifs.',
     description: 'The Heartmakers est un projet scolaire de refonte d\'un site e-commerce existant, enrichi d\'une dimension communautaire à la manière de Pinterest. La plateforme permet aux passionnés de loisirs créatifs de partager leurs créations, découvrir des inspirations, et s\'inscrire à des ateliers créatifs partout en France.',
     challenge: 'Repartir d\'un site e-commerce existant pour le transformer en plateforme communautaire complète, en créant de A à Z une identité visuelle cohérente et chaleureuse qui reflète l\'univers du fait-main et du DIY.',
-    solution: 'Une identité visuelle rose et rouge aux formes rondes et ludiques, avec un logo typographique expressif et un système d\'icônes maison (cœur, smiley, maison, fleur). Le site couvre l\'accueil communautaire, une page événements géolocalisés sur carte de France, un profil utilisateur avec galerie de créations, et une page contact.',
+    solution: 'Une identité visuelle rose et rouge aux formes rondes et ludiques, avec un logo typographique expressif et un système d\'icônes maison. Le site couvre l\'accueil communautaire, une page événements géolocalisés sur carte de France, un profil utilisateur avec galerie de créations, et une page contact.',
     result: 'Prototype desktop complet couvrant 6 pages : splash screen, accueil, événements avec réservation, profil utilisateur, qui sommes-nous et contact. Identité visuelle intégralement créée pour le projet.',
     coverImage: '/images/projects/the-heartmakers/cover.jpg',
     images: [
@@ -167,7 +167,7 @@ export const projects: Project[] = [
     excerpt: 'Application web de gestion de patrimoine centralisant clients, agenda et documents pour un gestionnaire indépendant.',
     description: 'Weamon est une application web conçue pour une gestionnaire de patrimoine ayant besoin d\'un outil unique pour centraliser son activité au quotidien : suivi des clients, rendez-vous, documents et investissements. Projet scolaire mené avec une vraie commanditaire.',
     challenge: 'La gestionnaire utilisait plusieurs outils disparates pour suivre ses clients et son agenda, sans vue d\'ensemble cohérente. Elle avait besoin d\'un dashboard unique, rapide à prendre en main, qui regroupe toutes ses informations professionnelles en un seul endroit.',
-    solution: 'Une interface desktop claire et sobre, à dominante verte, avec une navigation latérale fixe en 4 sections : tableau de bord, calendrier, gestion des clients en vue Kanban par statut, et espace documents. Le tableau de bord synthétise les indicateurs clés (clients suivis, investissements sur 6 mois, prochains rendez-vous) en un coup d\'œil.',
+    solution: 'Une interface desktop claire et sobre, à dominante verte, avec une navigation latérale fixe en 4 sections : tableau de bord, calendrier, gestion des clients en vue Kanban par statut, et espace documents. Le tableau de bord synthétise les indicateurs clés en un coup d\'œil.',
     result: 'Prototype complet couvrant 7 écrans : connexion, création de compte, tableau de bord, gestion des clients avec fiche détaillée, calendrier mensuel, notifications et gestion des documents.',
     coverImage: '/images/projects/weamon/cover.jpg',
     images: [
@@ -192,8 +192,8 @@ export const projects: Project[] = [
     excerpt: 'Identité visuelle complète pour une application mettant en relation restaurateurs et gourmets.',
     description: 'Zenzer est une application à double entrée : elle aide les restaurateurs à créer et mettre en avant leurs menus via des templates, et permet aux clients de trouver un restaurant adapté à leurs préférences alimentaires. Studio Meringué a conçu l\'intégralité de l\'identité visuelle, de la charte graphique aux mises en situation.',
     challenge: 'Créer une identité qui parle simultanément aux restaurateurs (crédibilité, modernité) et aux clients (appétit, facilité). Le logo devait être distinctif, mémorable, et fonctionner aussi bien en icône d\'application qu\'en logotype.',
-    solution: 'Un logotype inspiré de la fleur de gingembre, dont un pétale se transforme en fourchette — symbole à la fois botanique et gastronomique. La typographie Neulis Cursive, légèrement retravaillée, apporte une touche organique et chaleureuse. Le gradient jaune-corail-rose reflète la générosité et la chaleur de la cuisine. La charte couvre logo, icônes, pictogrammes, couleurs, typographies et mises en situation.',
-    result: 'Charte graphique complète livrée au client : logo en plusieurs variantes (couleur, noir et blanc, icônes app), système de couleurs et gradients, typographies, pictogrammes, et mises en situation réseaux sociaux et mobile.',
+    solution: 'Un logotype inspiré de la fleur de gingembre, dont un pétale se transforme en fourchette — symbole à la fois botanique et gastronomique. La typographie Neulis Cursive, légèrement retravaillée, apporte une touche organique et chaleureuse. Le gradient jaune-corail-rose reflète la générosité et la chaleur de la cuisine.',
+    result: 'Charte graphique complète livrée au client : logo en plusieurs variantes, système de couleurs et gradients, typographies, pictogrammes, et mises en situation réseaux sociaux et mobile.',
     coverImage: '/images/projects/zenzer/05.jpg',
     images: [
       '/images/projects/zenzer/01.jpg',
@@ -213,9 +213,9 @@ export const projects: Project[] = [
     categoryLabel: 'Affiches',
     year: '2023 — 2026',
     excerpt: 'Série de posters psychédéliques réalisés en collaboration avec le groupe de rock indépendant KyMo.',
-    description: 'Collaboration continue avec KyMo, groupe de rock indépendant, pour la création d'une série de posters inspirés de leurs titres. Chaque affiche est réalisée entièrement sur Photoshop et constitue une interprétation visuelle d'une chanson.',
-    challenge: 'Retranscrire l'univers émotionnel et sonore d'un groupe de rock indépendant en une série de visuels cohérents, sans tomber dans les codes graphiques trop attendus du genre.',
-    solution: 'Un langage visuel centré sur l'espace, les textures granuleuses et les couleurs vibrantes — fonds liquides marbled, gradients chromatiques intenses, silhouettes humaines minuscules face à l'immensité. Chaque poster est construit autour d'une phrase ou d'un mot du titre qu'il illustre.',
+    description: 'Collaboration continue avec KyMo, groupe de rock indépendant, pour la création d\'une série de posters inspirés de leurs titres. Chaque affiche est réalisée entièrement sur Photoshop et constitue une interprétation visuelle d\'une chanson.',
+    challenge: 'Retranscrire l\'univers émotionnel et sonore d\'un groupe de rock indépendant en une série de visuels cohérents, sans tomber dans les codes graphiques trop attendus du genre.',
+    solution: 'Un langage visuel centré sur l\'espace, les textures granuleuses et les couleurs vibrantes — fonds liquides marbled, gradients chromatiques intenses, silhouettes humaines minuscules face à l\'immensité. Chaque poster est construit autour d\'une phrase ou d\'un mot du titre qu\'il illustre.',
     result: 'Une série de 8 affiches couvrant plusieurs années de collaboration, formant un univers visuel reconnaissable et cohérent pour le groupe.',
     coverImage: '/images/projects/kymo-posters/cover.jpg',
     images: [
