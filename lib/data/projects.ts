@@ -133,6 +133,30 @@ export const projects: Project[] = [
     services: ['UX Design', 'UI Design', 'Prototypage', 'Design System'],
     featured: true,
   },
+  {
+    slug: 'the-heartmakers',
+    title: 'The Heartmakers',
+    client: 'Projet scolaire',
+    category: 'ux-ui',
+    categoryLabel: 'UX/UI Design',
+    year: '2025',
+    excerpt: 'Refonte et identité visuelle d\'un site communautaire dédié aux passionnés de loisirs créatifs.',
+    description: 'The Heartmakers est un projet scolaire de refonte d\'un site e-commerce existant, enrichi d\'une dimension communautaire à la manière de Pinterest. La plateforme permet aux passionnés de loisirs créatifs de partager leurs créations, découvrir des inspirations, et s\'inscrire à des ateliers créatifs partout en France.',
+    challenge: 'Repartir d\'un site e-commerce existant pour le transformer en plateforme communautaire complète, en créant de A à Z une identité visuelle cohérente et chaleureuse qui reflète l\'univers du fait-main et du DIY.',
+    solution: 'Une identité visuelle rose et rouge aux formes rondes et ludiques, avec un logo typographique expressif et un système d\'icônes maison (cœur, smiley, maison, fleur). Le site couvre l\'accueil communautaire, une page événements géolocalisés sur carte de France, un profil utilisateur avec galerie de créations, et une page contact.',
+    result: 'Prototype desktop complet couvrant 6 pages : splash screen, accueil, événements avec réservation, profil utilisateur, qui sommes-nous et contact. Identité visuelle intégralement créée pour le projet.',
+    coverImage: '/images/projects/the-heartmakers/cover.jpg',
+    images: [
+      '/images/projects/the-heartmakers/01.jpg',
+      '/images/projects/the-heartmakers/02.jpg',
+      '/images/projects/the-heartmakers/03.jpg',
+      '/images/projects/the-heartmakers/04.jpg',
+      '/images/projects/the-heartmakers/05.jpg',
+      '/images/projects/the-heartmakers/06.jpg',
+    ],
+    services: ['UX Design', 'UI Design', 'Identité visuelle', 'Prototypage'],
+    featured: true,
+  },
 ]
 
 // ─────────────────────────────────────────────────────────────
