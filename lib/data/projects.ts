@@ -15,30 +15,22 @@ export type ProjectCategory =
   | 'reseaux-sociaux'
 
 export interface Project {
-  // ── Obligatoire ──────────────────────────────────────────
-  slug: string           // URL du projet : /projets/[slug]  ex: "mon-projet"
-  title: string          // Titre affiché
-  client: string         // Nom du client
+  slug: string
+  title: string
+  client: string
   category: ProjectCategory
-  categoryLabel: string  // Libellé affiché (ex: "Identité Visuelle")
-  year: string           // ex: "2024"
-  excerpt: string        // Courte description (1-2 phrases, visible dans la grille)
-  coverImage: string     // Image principale : "/images/projects/[slug]/cover.jpg"
-
-  // ── Fiche projet (case study) ────────────────────────────
-  description: string    // Contexte complet
-  challenge: string      // Le défi / la problématique
-  solution: string       // Notre approche
-  result: string         // Résultat
-
-  // ── Galerie ──────────────────────────────────────────────
-  // Mettre 1 à N images : "/images/projects/[slug]/01.jpg", "02.jpg"…
+  categoryLabel: string
+  year: string
+  excerpt: string
+  coverImage: string
+  description: string
+  challenge: string
+  solution: string
+  result: string
   images: string[]
-
-  // ── Métadonnées ──────────────────────────────────────────
-  services: string[]     // ex: ["Logo", "Charte graphique", "Typographie"]
-  featured: boolean      // true = affiché sur la page d'accueil (max 3-4)
-  tags?: string[]        // Optionnel, mots-clés supplémentaires
+  services: string[]
+  featured: boolean
+  tags?: string[]
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -117,11 +109,34 @@ export const projects: Project[] = [
     services: ['Logo', 'Charte graphique', 'Affiches', 'Menu', 'Réseaux sociaux', 'Produits dérivés'],
     featured: true,
   },
+  {
+    slug: 'oue',
+    title: 'OUE',
+    client: 'Projet personnel',
+    category: 'ux-ui',
+    categoryLabel: 'UX/UI Design',
+    year: '2025',
+    excerpt: 'Application de streaming musical avec suivi d\'actualités artistiques et réservation de concerts en ligne.',
+    description: 'OUE est une application mobile de streaming musical pensée pour les mélomanes qui ne fréquentent pas les réseaux sociaux. En plus d\'écouter de la musique, l\'utilisateur peut suivre l\'actualité de ses artistes favoris et réserver des billets de concerts directement depuis l\'app.',
+    challenge: 'Les plateformes de streaming existantes ne permettent pas de suivre facilement l\'actualité des artistes ni de réserver des concerts sans passer par des applications tierces. Il manquait un outil tout-en-un centré sur l\'expérience musicale complète.',
+    solution: 'Une interface dark mode épurée avec une identité visuelle forte autour du logo OUE en typographie bulle violet-fuchsia. Navigation par onglets claire (Accueil, Recherche, Bibliothèque, Concerts, Paramètres), avec une fonctionnalité de géolocalisation des concerts à proximité filtrée par artistes favoris.',
+    result: 'Prototype complet couvrant 5 écrans principaux : accueil personnalisé, recherche par genre, bibliothèque d\'artistes favoris, concerts à proximité avec réservation intégrée, et paramètres utilisateur.',
+    coverImage: '/images/projects/oue/cover.jpg',
+    images: [
+      '/images/projects/oue/01.jpg',
+      '/images/projects/oue/02.jpg',
+      '/images/projects/oue/03.jpg',
+      '/images/projects/oue/04.jpg',
+      '/images/projects/oue/05.jpg',
+      '/images/projects/oue/06.jpg',
+    ],
+    services: ['UX Design', 'UI Design', 'Prototypage', 'Design System'],
+    featured: true,
+  },
 ]
 
 // ─────────────────────────────────────────────────────────────
-//  Catégories — Filtre sur la page /projets
-//  Ajouter / retirer une catégorie selon tes besoins
+//  Catégories
 // ─────────────────────────────────────────────────────────────
 export const categories = [
   { slug: 'tous', label: 'Tous les projets' },
