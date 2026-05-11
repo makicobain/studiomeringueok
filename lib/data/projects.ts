@@ -194,7 +194,7 @@ export const projects: Project[] = [
     challenge: 'Créer une identité qui parle simultanément aux restaurateurs (crédibilité, modernité) et aux clients (appétit, facilité). Le logo devait être distinctif, mémorable, et fonctionner aussi bien en icône d\'application qu\'en logotype.',
     solution: 'Un logotype inspiré de la fleur de gingembre, dont un pétale se transforme en fourchette — symbole à la fois botanique et gastronomique. La typographie Neulis Cursive, légèrement retravaillée, apporte une touche organique et chaleureuse. Le gradient jaune-corail-rose reflète la générosité et la chaleur de la cuisine. La charte couvre logo, icônes, pictogrammes, couleurs, typographies et mises en situation.',
     result: 'Charte graphique complète livrée au client : logo en plusieurs variantes (couleur, noir et blanc, icônes app), système de couleurs et gradients, typographies, pictogrammes, et mises en situation réseaux sociaux et mobile.',
-    coverImage: '/images/projects/zenzer/cover.jpg',
+    coverImage: '/images/projects/zenzer/05.jpg',
     images: [
       '/images/projects/zenzer/01.jpg',
       '/images/projects/zenzer/02.jpg',
