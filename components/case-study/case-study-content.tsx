@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { type Project, projects } from '@/lib/data/projects'
 import { ProjectCard } from '@/components/project-card'
 import { ArrowLeft, X, ChevronLeft, ChevronRight } from 'lucide-react'
-import { cn } from '@/lib/utils'
 
 interface CaseStudyContentProps {
   project: Project
@@ -48,7 +47,6 @@ function Lightbox({
       className="fixed inset-0 z-50 flex items-center justify-center bg-background/95 backdrop-blur-sm"
       onClick={onClose}
     >
-      {/* Bouton fermer */}
       <button
         className="absolute top-6 right-6 p-2 rounded-full bg-foreground/10 hover:bg-foreground/20 transition-colors text-foreground"
         onClick={onClose}
@@ -57,29 +55,25 @@ function Lightbox({
         <X className="h-5 w-5" />
       </button>
 
-      {/* Compteur */}
       {images.length > 1 && (
         <span className="absolute top-6 left-1/2 -translate-x-1/2 text-sm text-muted-foreground">
           {current + 1} / {images.length}
         </span>
       )}
 
-      {/* Image */}
       <div
-        className="relative max-w-5xl max-h-[85vh] w-full mx-8"
+        className="relative flex items-center justify-center w-full h-full px-16 py-16"
         onClick={(e) => e.stopPropagation()}
       >
         <Image
           src={images[current]}
           alt={`${title} - Image ${current + 1}`}
           width={1400}
-          height={900}
-          className="object-contain w-full max-h-[85vh] rounded-lg"
-          style={{ height: 'auto' }}
+          height={1400}
+          className="object-contain max-h-[85vh] max-w-full w-auto h-auto rounded-lg"
         />
       </div>
 
-      {/* Navigation (si plusieurs images) */}
       {images.length > 1 && (
         <>
           <button
@@ -102,7 +96,35 @@ function Lightbox({
   )
 }
 
-// ── Galerie adaptative ───────────────────────────────────────
+// ── Carte image galerie — s'adapte au ratio réel ─────────────
+function GalleryImage({
+  src,
+  alt,
+  onClick,
+}: {
+  src: string
+  alt: string
+  onClick: () => void
+}) {
+  return (
+    <div
+      className="relative bg-muted rounded-lg overflow-hidden cursor-zoom-in group flex items-center justify-center"
+      style={{ minHeight: '200px' }}
+      onClick={onClick}
+    >
+      <Image
+        src={src}
+        alt={alt}
+        width={800}
+        height={800}
+        className="object-contain w-full h-full max-h-[600px] group-hover:scale-[1.02] transition-transform duration-500"
+        style={{ height: 'auto' }}
+      />
+    </div>
+  )
+}
+
+// ── Galerie — grille simple 2 colonnes ───────────────────────
 function GalleryLayout({
   images,
   title,
@@ -114,62 +136,25 @@ function GalleryLayout({
 }) {
   if (images.length === 0) return null
 
-  const imgClass = "object-cover hover:scale-105 transition-transform duration-700 cursor-zoom-in"
-
   if (images.length === 1) {
     return (
-      <div className="relative aspect-[16/9] rounded-lg overflow-hidden bg-muted" onClick={() => onImageClick(0)}>
-        <Image src={images[0]} alt={`${title} - Image 1`} fill className={imgClass} />
-      </div>
+      <GalleryImage
+        src={images[0]}
+        alt={`${title} - Image 1`}
+        onClick={() => onImageClick(0)}
+      />
     )
   }
 
-  if (images.length === 2) {
-    return (
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {images.map((image, i) => (
-          <div key={image} className="relative aspect-[4/3] rounded-lg overflow-hidden bg-muted" onClick={() => onImageClick(i)}>
-            <Image src={image} alt={`${title} - Image ${i + 1}`} fill className={imgClass} />
-          </div>
-        ))}
-      </div>
-    )
-  }
-
-  if (images.length === 3) {
-    return (
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="md:col-span-2 relative aspect-[16/7] rounded-lg overflow-hidden bg-muted" onClick={() => onImageClick(0)}>
-          <Image src={images[0]} alt={`${title} - Image 1`} fill className={imgClass} />
-        </div>
-        {images.slice(1).map((image, i) => (
-          <div key={image} className="relative aspect-[4/3] rounded-lg overflow-hidden bg-muted" onClick={() => onImageClick(i + 1)}>
-            <Image src={image} alt={`${title} - Image ${i + 2}`} fill className={imgClass} />
-          </div>
-        ))}
-      </div>
-    )
-  }
-
-  // 4 images ou plus
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="md:col-span-2 relative aspect-[16/7] rounded-lg overflow-hidden bg-muted" onClick={() => onImageClick(0)}>
-        <Image src={images[0]} alt={`${title} - Image 1`} fill className={imgClass} />
-      </div>
-      {images.slice(1).map((image, i) => (
-        <div
+      {images.map((image, i) => (
+        <GalleryImage
           key={image}
-          className={cn(
-            'relative rounded-lg overflow-hidden bg-muted',
-            images.length % 2 === 0 && i === images.length - 2
-              ? 'md:col-span-2 aspect-[16/7]'
-              : 'aspect-[4/3]'
-          )}
-          onClick={() => onImageClick(i + 1)}
-        >
-          <Image src={image} alt={`${title} - Image ${i + 2}`} fill className={imgClass} />
-        </div>
+          src={image}
+          alt={`${title} - Image ${i + 1}`}
+          onClick={() => onImageClick(i)}
+        />
       ))}
     </div>
   )
@@ -200,7 +185,6 @@ export function CaseStudyContent({ project }: CaseStudyContentProps) {
 
   return (
     <div ref={contentRef}>
-      {/* Lightbox */}
       {lightboxIndex !== null && (
         <Lightbox
           images={project.images}
@@ -256,12 +240,19 @@ export function CaseStudyContent({ project }: CaseStudyContentProps) {
           </div>
         </div>
 
+        {/* Cover image */}
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div
             className="relative aspect-[16/9] rounded-lg overflow-hidden bg-muted cursor-zoom-in"
             onClick={() => setLightboxIndex(0)}
           >
-            <Image src={project.coverImage} alt={project.title} fill className="object-cover hover:scale-105 transition-transform duration-700" priority />
+            <Image
+              src={project.coverImage}
+              alt={project.title}
+              fill
+              className="object-cover hover:scale-105 transition-transform duration-700"
+              priority
+            />
           </div>
         </div>
       </section>
