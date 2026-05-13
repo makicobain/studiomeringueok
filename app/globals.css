@@ -190,22 +190,30 @@ html {
   background: oklch(0.65 0.28 330 / 0.3);
 }
 
-/* Custom scrollbar for dark mode */
-.dark ::-webkit-scrollbar {
+/* Scrollbar — taille fixe sur tous les modes pour éviter le décalage */
+::-webkit-scrollbar {
   width: 8px;
 }
 
-.dark ::-webkit-scrollbar-track {
-  background: oklch(0.15 0 0);
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-.dark ::-webkit-scrollbar-thumb {
-  background: oklch(0.3 0 0);
+::-webkit-scrollbar-thumb {
+  background: oklch(0.75 0 0 / 0.4);
   border-radius: 4px;
 }
 
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.6 0 0 / 0.6);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: oklch(0.35 0 0);
+}
+
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.4 0 0);
+  background: oklch(0.45 0 0);
 }
 
 /* ---- Bouton 1 : fond violet, texte blanc ---- */
