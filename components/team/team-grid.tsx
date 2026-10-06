@@ -6,7 +6,7 @@ const teamMembers = [
   {
     id: 1,
     name: "Emmanuelle Guérin",
-    role: "Fondatrice & UI/UX Designer",
+    role: "Co-Fondatrice & UI/UX Designer",
     bio: "Créative et curieuse, Emmanuelle s'est d'abord formée en graphisme, notamment en identités visuelles et en design interfaces. Aujourd'hui diplômée en UX/UI design, elle est à la recherche de nouvelles opportunités professionnelles sur Nice et ses alentours.",
     photo: "/profile.jpg",
     initials: "EG",
@@ -16,7 +16,7 @@ const teamMembers = [
   {
     id: 2,
     name: "Antoine Brun",
-    role: "Graphiste",
+    role: "Co-Fondateur & Graphiste",
     bio: "Spécialisé en mise en page, typographie et identités visuelles, Antoine a le sens du détail et de l'esthétisme. Son activité de musicien lui permets d'avoir une sensibilité particulière sur les projets culturels.",
     photo: "/antopp.png",
     initials: "AB",
